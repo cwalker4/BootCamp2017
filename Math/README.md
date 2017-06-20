@@ -8,77 +8,78 @@ The math lectures for the OSM Lab will be held from 8:00-9:50am, Monday, Wednesd
 
 ### Week 1
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-6-19  | M   | Introduction | [Thomas Sargent](http://www.tomsargent.com/) |    |
-6-20  | T   |              |                         |      |
-6-21  | W   | Probability and statics | [Karl Schmedders](http://www.business.uzh.ch/en/professorships/qba/members/schmedders.html) | Humpherys and Jarvis (2017, Ch. 3) |
-6-22  | Th  |              |                         |      |
-6-23  | F   | Probability and statics | [Karl Schmedders](http://www.business.uzh.ch/en/professorships/qba/members/schmedders.html) | Humpherys and Jarvis (2017, Ch. 3) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+6-19  | M   | Introduction | [Richard Evans](https://sites.google.com/site/rickecon/) | [OSM Lab Introduction](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/Math/Wk1_Intro/Intro_BootCamp.pdf) |   |
+|     |     |              | [Thomas Sargent](http://www.tomsargent.com/) | Video: "[Economics, computation, and Python](https://youtu.be/7d47A3TrMBI)" |   |
+6-20  | T   |              |                         |      |   |
+6-21  | W   | Probability and statistics | [Karl Schmedders](http://www.business.uzh.ch/en/professorships/qba/members/schmedders.html) | HJ (2017, Ch. 3) | [Math Prob Set 1](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/Math/Wk1_ProbStat/ProbStat_probset.pdf)  |
+6-22  | Th  |              |                |      | due M, 6-26, 8am |
+6-23  | F   | Probability and statistics | [Karl Schmedders](http://www.business.uzh.ch/en/professorships/qba/members/schmedders.html) | HJ (2017, Ch. 3) |   |
 
 ### Week 2
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-6-26  | M   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | Humpherys, Jarvis, Evans (2017, Ch. 3) |
-6-27  | T   |                      |                     |     |
-6-28  | W   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | Humpherys, Jarvis, Evans (2017, Ch. 3) |
-6-29  | Th  |                      |                     |     |
-6-30  | F   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | Humpherys, Jarvis, Evans (2017, Ch. 3) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+6-26  | M   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | HJE (2017, Ch. 3) | Math Prob Set 2  |
+6-27  | T   |                      |         |     | due W, 7-5, 8am |
+6-28  | W   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | HJE (2017, Ch. 3) |  |
+6-29  | Th  |                      |                     |     |  |
+6-30  | F   | Inner product spaces | [Zachary Boyd](http://www.math.ucla.edu/~zach.boyd/) | HJE (2017, Ch. 3) |  |
 
 ### Week 3
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-7-3  | M   | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY  |
-7-4  | T   | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY  |
-7-5  | W   | Spectral theory     | John Van den Berghe | Humpherys, Jarvis, Evans (2017, Ch. 4) |
-7-6  | Th  |                     |                     |     |
-7-7  | F   | Spectral theory     | John Van den Berghe | Humpherys, Jarvis, Evans (2017, Ch. 4) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+7-3  | M   | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY  |   |
+7-4  | T   | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY | NO CLASSES: HOLIDAY  |   |
+7-5  | W   | Spectral theory     | John Van den Berghe | HJE (2017, Ch. 4) | Math Prob Set 3 |
+7-6  | Th  |               |             |     | due M, 7-10, 8am |
+7-7  | F   | Spectral theory     | John Van den Berghe | HJE (2017, Ch. 4) |  |
 
 ### Week 4
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-7-10  | M   | Continuous optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 6) |
-7-11  | T   |              |                     |      |
-7-12  | W   | Continuous optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 6) |
-7-13  | Th  |              |                     |      |
-7-14  | F   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 7) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+7-10  | M   | Continuous optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 6) | Math Prob Set 4 |
+7-11  | T   |             |              |      | due M, 7-14, 8am |
+7-12  | W   | Continuous optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 6) |  |
+7-13  | Th  |              |                     |      |  |
+7-14  | F   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 7) |  |
 
 ### Week 5
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-7-17  | M   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 7) |
-7-18  | T   |            |           |      |
-7-19  | W   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 7) |
-7-20  | Th  |            |           |     |
-7-21  | F   | Linear optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 8) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+7-17  | M   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 7) | Math Prob Set 5 |
+7-18  | T   |            |           |      | due M, 7-24, 8am |
+7-19  | W   | Convex analysis | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 7) |  |
+7-20  | Th  |            |           |     |  |
+7-21  | F   | Linear optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 8) |  |
 
 ### Week 6
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-7-24  | M   | Linear optimization    | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 8) |
-7-25  | T   |             |            |     |
-7-26  | W   | Linear optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 8) |
-7-27  | Th  |             |            |     |
-7-28  | F   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 9) |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+7-24  | M   | Linear optimization    | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 8) | Math Prob Set 6 |
+7-25  | T   |             |            |     | due M, 7-31, 8am |
+7-26  | W   | Linear optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 8) |  |
+7-27  | Th  |             |            |     |  |
+7-28  | F   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 9) |  |
 
 ### Week 7
 
-| Date | Day | Topic | Instructor | Materials |
-|:---:|:---:|:--- |:--- |:--- |
-7-31 | M   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 9) |
-8-1  | T   |             |           |     |
-8-2  | W   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | Humpherys and Jarvis (2017, Ch. 9) |
-8-3  | Th  |             |           |     |
-8-4  | F   | Conclusion: Hwk due | Conclusion: Hwk due | Conclusion: Hwk due |
+| Date | Day | Topic | Instructor | Materials | Problem Set |
+|:---:|:---:|:--- |:--- |:--- | --- |
+7-31 | M   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 9) | Math Prob Set 7 |
+8-1  | T   |             |           |     | due F, 8-4, 8am |
+8-2  | W   | Nonlinear optimization | [Jorge Barro](http://www.jorgebarro.com/) | HJ (2017, Ch. 9) |  |
+8-3  | Th  |             |           |     |  |
+8-4  | F   | Conclusion: Hwk due | Conclusion: Hwk due | Conclusion: Hwk due |  |
 
 
 ## References
 
 * Humpherys, Jeffrey, Tyler J. Jarvis, and Emily J. Evans, *Foundations of Applied Mathematics: Volume I: Mathematical Analysis*, SIAM (2017, forthcoming).
-* Humpherys, Jeffrey and Tyler J. Jarvis, *Foudations of Applied Mathematics, Volume II: Algorithm Design and Optimization*, SIAM (2017, forthcoming).
+* Humpherys, Jeffrey and Tyler J. Jarvis, *Foundations of Applied Mathematics, Volume II: Algorithm Design and Optimization*, SIAM (2017, forthcoming).
 

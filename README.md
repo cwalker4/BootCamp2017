@@ -23,7 +23,7 @@ This `README.md` serves as a syllabus and reference for the OSM Lab Boot Camp. T
 
 **Logistics and finances: Grace Hammond, Becker Friedman Institute [(gohammond@uchicago.edu)](mailto:gohammond@uchicago.edu)**: Grace Hammond is the Associate Director for Operations, Programs, and Finance at the Becker Friedman Institute. She coordinates the student and instructor travel, housing, and financial matters.
 
-**Instructors.** The OSM Lab has excellent instructors and presenters from economics, math, and computation. Below is a list of this year's instructors and presenters in alphabetical order by last name. To see what they teach and when, check the [PDF schedule](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/OSM_Lab_topic_detail_2017.pdf) or check the respective [math](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Math), [econ](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Econ), and [computation](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Computation) detailed schedule pages.
+**Instructors.** The OSM Lab has excellent instructors and presenters from economics, math, and computation. Below is a list of this year's instructors and presenters in alphabetical order by last name. To see what they teach and when, check the respective [math](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Math), [econ](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Econ), and [computation](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Computation) detailed schedule pages.
 
 Senior Instructors
 * [Jorge Barro](http://www.jorgebarro.com/), Rice University
@@ -62,9 +62,9 @@ Below is a summary schedule of topics. More detailed schedules are on the respec
 | Date | Day | [Math](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Math#schedule) (8-10am) | [Econ](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Econ) (10am-noon) | [Computation](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Computation) (8am-noon) | Lunch speaker |
 |:---:|:---:|:--- |:--- |:--- |:--- |
 6-19  | M   | Introduction | Overlapping generations |              | [Casey Mulligan](https://economics.uchicago.edu/directory/casey-mulligan) |
-6-20  | T   |              |                         | Intro Python |     |
+6-20  | T   |              |                         | Python intro, standard library |     |
 6-21  | W   | Prob & stats | Overlapping generations |              |     |
-6-22  | Th  |              |                         | Python data  |     |
+6-22  | Th  |              |                         | Object oriented programming |     |
 6-23  | F   | Prob & stats | Overlapping generations |              |     |
 
 ### Week 2
@@ -72,7 +72,7 @@ Below is a summary schedule of topics. More detailed schedules are on the respec
 | Date | Day | [Math](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Math#schedule) (8-10am) | [Econ](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Econ) (10am-noon) | [Computation](https://github.com/OpenSourceMacro/BootCamp2017/tree/master/Computation) (8am-noon) | Lunch speaker |
 |:---:|:---:|:--- |:--- |:--- |:--- |
 6-26  | M   | Inner product spaces | Dynamic programming |                     |     |
-6-27  | T   |                      |                     | Data visualize      |     |
+6-27  | T   |                      |                     | Data visualization  |     |
 6-28  | W   | Inner product spaces | Dynamic programming |                     |     |
 6-29  | Th  |                      |                     | Root find, minimize |     |
 6-30  | F   | Inner product spaces | Dynamic programming |                     | TBA |
