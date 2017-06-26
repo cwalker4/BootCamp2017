@@ -186,6 +186,12 @@ Both investors should invest in the foreign currency:
 E[USD / CHF] &= (0.5)(1.25) + (0.5)(0.8) = 1.025\\
 E[CHF / USD] &= (0.5)(0.8) + (0.5)(1.25) = 1.025
 \end{align*}\newline\\
+\noindent\textbf{Problem 6}\\
+(a)\\
+(b)\\
+(c) Three standard normal distributions satisfy the conditions, i.e. $X\sim N(0,1), Y \sim N(0,1), Z \sim (0,1)$\\
+
+
 \noindent\textbf{Problem 7}\\
 (a) \begin{align*}
 E[Y] &= E[XZ] = E[X]E[Z] = 0\\
@@ -207,8 +213,9 @@ P(|X|=|Y|) &= P(|X|=|XZ|)\\
 Cov[X,Y] &= E[X,Y]-E[X]E[Y]\\
 &= E[XY]\\
 &= E[X^2Z] = 0\\
-\end{align*}\\
+\end{align*}
 (e)\\
+
 \noindent\textbf{Problem 8}\\
 For $m,$ (temporarily substituting $y$ for $m$ to avoid confusion between $m$ and $M$ random variables), $F(y) = P(Y \leq y) = 1-P(Y> y) = 1-P(min(X_1,...,X_n) > y).$ Since all $X_i$ are i.i.d, we have $F(y) = 1-P(X_1 > y)P(X_2>y)...P(X_n>y) = 1 - P(X_1 > y)^n.$ The uniform distribution of $X_i$'s over [0,1] yields the cumulative distribution:
 \begin{equation*}
@@ -228,7 +235,6 @@ n\Big(\frac{1-m}{1}\Big)^{n-1} & m \in [0,1]\\
 \end{cases}
 \end{equation*}\\
 Integrating over the distribution function, $E[m]=\int_{-\infty}^{\infty}mf(m)dm = \frac{1}{n+1}$\\
-For $M$, (temporarily substituting $x$ for $M$, for above reason), $F(x)=P(X \leq x) = 1-P(X>x)$\\
 
 \noindent\textbf{Problem 9}\\
 (a) Let $S_n$ denote individual states (trials), $S_n \in {0,1}$. Each state is a Bernoulli trial with success probability $P(S_n = 1) = P(S_n = 0) = 0.5$. Define $X_n = S_1 + S_2 + ... + S_n$. For $n=1000, E[X] = (1000)(0.5) = 500, Var[X] = (1000)(0.5)(0.5) = 250.$ By the central limit theorem, $X \sim N(500,250)$. The desired probability is $P(490<X_{1000}<510)$.
@@ -246,7 +252,7 @@ P\Bigg(\left|\frac{X_n}{n} - \frac{1}{2}\right| \geq \epsilon \Bigg) \leq \frac{
 Where $\epsilon$ in this case is $(0.1)(0.5) = (0.005)$. For the left hand side of (1) to be less than 0.01, $n \geq 5000$.\\
 
 \noindent\textbf{Problem 10}\\
-Proof by contradiction. Assume $\theta < 0$. Define the function $f: \mathbb{R}\to \mathbb{R}, f(x) = e^{\theta x}$. By Jensen's Inequality and convexity of $f$, $f(E[X]) \leq E[f(x)] = 1 \implies e^{\theta E[X]} \leq E[e^{\theta X}].$ For $E[X]<0$ and $\theta<0, e^{\theta E[X]} > 1 = E[e^{\theta X}]$, contradiction Jensen's Inequality. Thus, $\theta$ must be greater than 0. 
+Proof by contradiction. Assume $\theta < 0$. Define the function $f: \mathbb{R}\to \mathbb{R}, f(x) = e^{\theta x}$. By Jensen's Inequality and convexity of $f$, $f(E[X]) \leq E[f(x)] = 1 \implies e^{\theta E[X]} \leq E[e^{\theta X}].$ For $E[X]<0$ and $\theta<0, e^{\theta E[X]} > 1 = E[e^{\theta X}]$, contradiction Jensen's Inequality for a convex function. Thus, $\theta$ must be greater than 0. 
 
 
 
