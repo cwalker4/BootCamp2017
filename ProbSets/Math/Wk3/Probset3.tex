@@ -240,7 +240,6 @@ As $n \rightarrow \infty, 0.4 \rightarrow 0$.
 \| \lim_{n \rightarrow \infty} A^n \|_{F} &= \sqrt{tr(A^TA)}\\
 &= \sqrt{12.5}\\
 \end{align*}\\
-Yes, it's changing, but I think I messed something up. \textbf{TODO: FIX THIS}\\
 
 \noindent (iii) Let matrix $B = 3I + 5A + A^3$, with $A$ as defined above.
 \begin{align*}
@@ -259,6 +258,115 @@ x^TAx &= x^T \lambda x \\
 x^TAx &= \lambda x^T x\\
 \implies x^TA &= \lambda x^T
 \end{align*}
-\textbf{TODO: actually solve this.}
+
+\noindent\textbf{4.20}\\
+\begin{align*}
+B &= U^HAU\\
+B^H &= (U^HAU)^H\\
+&= U^HAU^{HH}\\
+&= U^HAU\\
+&= B\\
+\end{align*}
+$\implies B$ is Hermitian.\\
+
+\noindent\textbf{4.24}\\
+(i) \begin{align*}
+p(x) &= \frac{\langle x, Ax \rangle}{\|x\|^2} = \frac{\langle Ax, x \rangle}{\|x\|^2}\\
+&\implies \frac{\lambda \langle x, x \rangle}{\|x\|^2} = \frac{\bar{\lambda} \langle x, x \rangle}{\|x\|^2}\\
+&\implies \lambda = \bar{\lambda}\\
+&\implies \lambda \in \mathbb{R}
+\end{align*}\\
+
+\noindent (ii) \begin{align*}
+p(x) &= \frac{\langle x, Ax \rangle}{\|x\|^2} = \frac{\langle -Ax, x \rangle}{\|x\|^2}\\
+&\implies \frac{\lambda \langle x, x \rangle}{\|x\|^2} = \frac{-\bar{\lambda} \langle x, x \rangle}{\|x\|^2}\\
+&\implies -\lambda = \bar{\lambda}\\
+&\implies \lambda \in \mathbb{C}
+\end{align*}\\
+
+\noindent\textbf{4.25}\\
+Any $x_j, j=1,\cdots,n$ can be written as $x_1x_1^Hx_j + \cdots + x_nx_n^Hx_j = (x_1x_1^H + \cdots + x_nx_n^H)x_j \implies x_1x_1^H + \cdots + x_nx_n^H = I_n$.\\
+
+\noindent\textbf{4.27}\\
+Positive definite implies that $x^TAx > 0$ for all $x \in \mathbb{R}^n$. Let $e_1, \cdots , e_n$ be the standard basis. For positive definite matrix $A, e_i^TAe_i > 0, i = 1, \cdots, n$. For some basis vector $e_i, e_i^TAe_i = a_{ii}$, that is, the $i^{th}$ entry along the diagonal of A. Thus, the diagonal entries of $A$ are all strictly greater than zero.\\
+
+\noindent\textbf{4.28}\\
+
+\noindent\textbf{4.31}\\
+(i) \begin{align*}
+\|A\|_2 = \sup_{x \ne 0} \frac{\|Ax\|_2}{\|x\|_2} &= \sup_{x \ne 0} \frac{\|U \Sigma V' x\|_2}{\|x\|_2}\\
+&= \sup_{x \ne 0} \frac{\| \Sigma V' x\|_2}{\|x\|_2}\\
+&= \sup_{y \ne 0} \frac{\|\Sigma y\|_2}{\|Vy\|_2}\\
+&= \sup_{y \ne 0} \frac{(\sum_{i=1}^{r} \sigma_i^2 |y_i|^2)^{\frac{1}{2}}}{(\sum_{i=1}^{r} |y_i|^2)^\frac{1}{2}}\\
+& \leq \sigma_1
+\end{align*}
+For $y=\begin{bmatrix}  1 & 0 & \cdots & 0 \end{bmatrix}^T$, $\|\Sigma y\|_2 = \sigma_1$, and the supremum is attained.\\
+
+\noindent (ii) \begin{align*}
+\|A\|_2 = \sup_{x \ne 0} \frac{\|A^{-1}x\|_2}{\|x\|_2} &= \sup_{x \ne 0} \frac{\|(U \Sigma V')^{-1} x\|_2}{\|x\|_2}\\
+&= \sup_{x \ne 0} \frac{\|V \Sigma U^T x\|_2}{\|x\|_2}\\
+&= \sup_{y \ne 0} \frac{\|\Sigma^{-1} y\|_2}{\|Vy\|_2}\\
+&= \sup_{y \ne 0} \frac{(\sum_{i=1}^{r} \frac{1}{\sigma_i^2} |y_i|^2)^{\frac{1}{2}}}{(\sum_{i=1}^{r} |y_i|^2)^\frac{1}{2}}\\
+&\implies \|A^{-1}\|_2 = \sigma_n^{-1}
+\end{align*}\\
+
+\noindent (iii) \\
+
+\noindent (iv) \begin{align*}
+\|UAV\|_2 &= \sup \frac{\|UAVx\|_2}{\|x\|_2}\\
+&= \sup \frac{\langle UAVx, x \rangle ^\frac{1}{2}}{\|x\|_2}\\
+&= \sup \frac{\langle Ax, x \rangle ^\frac{1}{2}}{\|x\|_2}\\
+&= \sup \frac{\|Ax\|_2}{\|x\|_2}\\
+&= \|A\|_2
+\end{align*}\\
+
+\noindent\textbf{4.32}\\
+\begin{align*}
+\|UAV\|_F &= \sqrt{Tr[(UAV)(UAV)^H]}\\
+&= \sqrt{Tr(UAVV^HA^HU^H)}\\
+&= \sqrt{Tr(UAA^HU^H)}\\
+&= \sqrt{Tr(AA^HUU^H)}\\
+&= \sqrt{Tr(AA^H)}\\
+&= \sqrt{Tr(A^2)}\\
+&= \|A\|_F
+\end{align*}\\
+
+\noindent\textbf{4.33}\\
+
+\noindent\textbf{4.36}\\
+The matrix
+\[A = \begin{bmatrix} 
+0 & 1\\
+-1 & 0\\
+\end{bmatrix}\]
+Has $\det(A) = -1$, eigenvalues $\{i, -i \}$, and singular values $\{1, 1\}$.\\
+
+\noindent\textbf{4.38}\\
+(i) \begin{align*}
+AA^\dagger &= U_1\Sigma_1V_1^HV_1\Sigma_1^{-1}U_1^H\\
+&= I\\
+&\implies AA^\dagger A = A
+\end{align*}\\
+
+\noindent(ii) $AA^\dagger = I \implies A^\dagger A A^\dagger = A^\dagger$.
+
+\noindent(iii) \begin{align*}
+(AA^\dagger)^H &= A^{\dagger H}A^H\\
+&= (V_1\Sigma_1^{-1}U_1^H)^H(U_1\Sigma_1V_1^H)^H\\
+&= U_1E_1^{-1}V_1^HV_1\Sigma_1U_1^H\\
+&=AA^\dagger
+\end{align*}\\
+
+\noindent (iv)\begin{align*}
+(A^\dagger A)^H &= A^HA^{\dagger H}\\
+&= (U_1\Sigma_1V_1^H)^H(V_1 \Sigma_1^-1U_1^H)^H\\
+&= V_1\Sigma_1U_1^HU_1\Sigma_1^{-1}V^H\\
+&= A^\dagger A
+\end{align*}
+
+
+
+
+
 
 \end{document}
