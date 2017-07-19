@@ -1,0 +1,105 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{geometry}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+
+
+\begin{document}
+
+\begin{flushleft}
+  \textbf{\large{Math Problem Set \#5}} \\
+  Charlie Walker
+\end{flushleft}
+
+\vspace{5mm}
+
+\noindent\textbf{7.1}\\
+Proof by induction. For $k=2$, the set of all combinations of the form $\lambda_1x_1 + \lambda_2x_2$, where $\lambda_1, \lambda_2 \geq 0$ and $\lambda_1 + \lambda_2 = 1$ is clearly convex, by the definition of a convex set. For $k=3$
+
+\noindent\textbf{7.2}\\
+(i) Let $x, y$ be two vectors in the hyperplane. Since each vector is in the hyperplane, $a \cdot x = a \cdot y = 0$. Convexity requires $\lambda x + (1 - \lambda) y$ to be in the hyperplane; in other words,
+\begin{align*}
+&a \cdot (\lambda x + (1 - \lambda) y) = 0\\
+&= a \lambda x + a(1-\lambda)y\\
+&= \lambda ax + (1 - \lambda) ay
+\end{align*}
+Since $a \cdot x = a \cdot y = 0$, the above expression is equal to zero, implying that the hyperplane is convex.\\
+
+\noindent (ii) Halfspaces are the set of vectors $x$ such that $a \cdot x \leq 0$. As above, take any two vectors $x, y$ in the halfspace. 
+\begin{align*}
+a \cdot (\lambda x + (1-\lambda)y &= a\lambda x + a(1-\lambda)y\\
+&= a \lambda x + a(1-\lambda) y\\
+&= \lambda ax + (1-\lambda)ay
+\end{align*}
+Since $a \cdot x, a\cdot y$ are less than or equal to zero, the above expression is less than or equal to zero, implying that the halfspace is convex.\\
+
+\noindent\textbf{7.4}\\
+
+
+
+
+
+
+
+
+
+\end{document}
