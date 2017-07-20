@@ -3,37 +3,27 @@
 \usepackage{threeparttable}
 \usepackage{geometry}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\renewcommand{\baselinestretch}{1.5}
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
 \lhead{}
 \chead{}
 \rhead{}
-\lfoot{}
+\lfoot{\footnotesize\textsl{OSM Lab, Summer 2017, Math PS \#5}}
 \cfoot{}
 \rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
 \renewcommand\headrulewidth{0pt}
 \renewcommand\footrulewidth{0pt}
 \usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
-\usepackage{listings}
-\lstset{frame=single,
-  language=Python,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  breaklines=true,
-  breakatwhitespace=true
-  tabsize=3
-}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{harvard}
+\usepackage{natbib}
 \usepackage{setspace}
 \usepackage{float,color}
 \usepackage[pdftex]{graphicx}
 \usepackage{hyperref}
-\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue,citecolor=red}
 \theoremstyle{definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{acknowledgement}[theorem]{Acknowledgement}
@@ -62,44 +52,49 @@
 \newcommand\ve{\varepsilon}
 \newcommand\boldline{\arrayrulewidth{1pt}\hline}
 
-
 \begin{document}
 
 \begin{flushleft}
-  \textbf{\large{Math Problem Set \#5}} \\
-  Charlie Walker
+   \textbf{\large{Math, Problem Set 5, Convex Analysis}} \\[5pt]
+   Name: Charlie Walker \\[5pt]
 \end{flushleft}
 
 \vspace{5mm}
 
-\noindent\textbf{7.1}\\
-Proof by induction. For $k=2$, the set of all combinations of the form $\lambda_1x_1 + \lambda_2x_2$, where $\lambda_1, \lambda_2 \geq 0$ and $\lambda_1 + \lambda_2 = 1$ is clearly convex, by the definition of a convex set. For $k=3$
+\noindent {\bf Solutions}
 
-\noindent\textbf{7.2}\\
-(i) Let $x, y$ be two vectors in the hyperplane. Since each vector is in the hyperplane, $a \cdot x = a \cdot y = 0$. Convexity requires $\lambda x + (1 - \lambda) y$ to be in the hyperplane; in other words,
-\begin{align*}
-&a \cdot (\lambda x + (1 - \lambda) y) = 0\\
-&= a \lambda x + a(1-\lambda)y\\
-&= \lambda ax + (1 - \lambda) ay
-\end{align*}
-Since $a \cdot x = a \cdot y = 0$, the above expression is equal to zero, implying that the hyperplane is convex.\\
+\noindent{\bf 7.1} Claim: If S is a nonempty subset of V, then conv(S) is convex. \\
+The hull $H=conv(S)$ is given by the set of all finite sums of the form
+$\lambda_1x_1 + ... +\lambda_nx_n$ for all $x \in S, \, n \in \mathbb{N}$ with $\sum \lambda_i = 1$ and $\lambda_i \geq 0$. $H$ is convex if $\gamma y + (1-\gamma)x \in H \, \forall x, y \in H$ and $0\leq \gamma \leq1$.$
+ \gamma y + (1-\gamma)x =\,  \gamma (\lambda_1y_1 + ... +\lambda_ny_n )+ (1-\gamma)(\lambda'_1x_1 + ... +\lambda'_kx_k) \, \in H$ iff $\, \gamma \sum \lambda_i + (1-\gamma) \sum \lambda'_j = 1$. Since $x, y \in H$ by definition of $H$ it follows that $\sum \lambda_i = \sum \lambda'_j = 1$. Finally,  $\gamma 1 + (1-\gamma) 1 = 1$ is true.
 
-\noindent (ii) Halfspaces are the set of vectors $x$ such that $a \cdot x \leq 0$. As above, take any two vectors $x, y$ in the halfspace. 
-\begin{align*}
-a \cdot (\lambda x + (1-\lambda)y &= a\lambda x + a(1-\lambda)y\\
-&= a \lambda x + a(1-\lambda) y\\
-&= \lambda ax + (1-\lambda)ay
-\end{align*}
-Since $a \cdot x, a\cdot y$ are less than or equal to zero, the above expression is less than or equal to zero, implying that the halfspace is convex.\\
-
-\noindent\textbf{7.4}\\
+\noindent{\bf 7.2i} Claim: A hyperplane is convex. \\ Let $x_{a}$ and $x_{b}$ be any two arbitrary points in $P = \{x \in V | \langle a,x \rangle = b \}$. Then, $\lambda x_{a} + (1-\lambda) x_{b} = \lambda a_{1} x_{a1} + ... + \lambda a_{n} x_{an} + ... + (1 - \lambda)a_{1}x_{b1} + ... + (1 - \lambda)a_{n}x_{bn} = \lambda a_{1}x_{a1} + a_{1}x_{b1} - \lambda a_{1}x_{b1} + ... + \lambda_a{n}x_{an} + a_{n}x_{bn} - \lambda a_{n} x_{bn} = b + \lambda b - \lambda b = b$. Since any convex combination of the two points is still in the hyperplane $P$, we know that the hyperplane is convex. \\
 
 
+\noindent{\bf 7.2ii} Claim: Half-spaces are convex. \\ Let $H = \{x \in V | \langle a,x \rangle  \leq b \}$ be a half-space, where $a \in V, a \neq 0,$ and $b \in {\rm I\!R}$. Then, for any two arbitrary points $x_{a}$ and $x_{b}$ in the half-space, we know that $\lambda(a_{1}x_{1} + ... + a_{n}x_{n} + (1 - \lambda)(a_{1}x_{1}^{'} + ... + a_{n}x_{n}^{'} = \lambda a_{1}x_{1} + a_{1}x_{1}^{'} - \lambda a_{1}x_{1}^{'} + ... + \lambda a_{n}x_{n} + a_{n}x_{n}^{'} - \lambda a_{n}x_{n}^{'} \leq \lambda b + b - \lambda b = b$. Since the convex combination of any two arbitrary points is in the half-space, we conclude that the half-space is convex. \\
 
+\noindent{\bf 7.4i} Claim: $\|x- y\|^{2} = \|x-p\|^{2} + \|p-y\|^{2} + 2 \langle x-p, p-y \rangle$. \\ $\|x-y\|^{2} = \langle x-y, x-y \rangle = \langle x-p +p -y, x-p+p-y \rangle = \langle x-p, x-p \rangle + \langle x-p, p-y \rangle + \langle p-y, x-p \rangle + \langle p-y, p-y \rangle = \|x-p\|^{2} + \|p-y\|^{2} + 2\langle x-p, p-y \rangle$. \\
 
+\noindent{\bf 7.4ii} $\|x-p\| 
+\leq \|x-p\| + \|p-y\|$ because $\|p-y\| \geq 0$. Therefore squaring both sides, we preserve the inequality and obtain $\|x-p\|^{2} 
+\leq \|x-p\|^{2} + \|p-y\|^{2} + 2 \langle x-p, p-y \rangle = \|x-y\|^{2}$. Taking the squareroot of both sides now, we obtain $\|x-p\| \leq \|x-y\|$. \\
 
+\noindent{\bf 7.4iii} Given that $z = \lambda y + (1-\lambda)p$, we can write $\|x-z\|^{2} = \|x-p\|^{2} + \|p-z\|^{2} + 2\langle x-p, p-z \rangle = \|x-p\|^{2} + \|p - \lambda y - p + \lambda p\|^{2} + 2\langle x-p, p-\lambda y - p + \lambda p \rangle = \|x-p\|^{2} + \| \lambda p  - \lambda y \|^{2} + 2\langle x-p, \lambda p - \lambda y \rangle = \|x-p\|^{2} + \lambda^{2} \|p-y\| + 2\lambda \langle x-p, p-y \rangle$. \\ 
 
+\noindent{\bf 7.4iv} Claim: If p is a projection of x onto the convex set C, then $\langle x-p, p-y \rangle \geq 0 \forall y \in C$. \\ Suppose p is the projection of $x$ onto the convex set $C$. Then we know that $\|x-z\|^2 = \|x-p\|^2 + 2\lambda \langle x-p, p-y \rangle + \lambda^2 \|y-p\|^2$. We know that the right hand side of the equation is greater than $\|x-p\|^{2}$ since p is a projection onto C and z is a point in C (z is in C because C is convex and z is a convex linear combination of points in C). Moreover, the right hand side can be rewritten as $\|x-p\|^2 + \lambda (2\langle x-p, p-y \rangle + \lambda \|y-p\|^2)$ where $\lambda \|y-p\|^2 \geq 0$. Since the expression has to be greater than or equal to $\|x-p\|^{2}$, it follows that $2\langle x-p, p-y \rangle + \lambda \|y-p\|^{2} \geq 0$ for all $y \in C$ and $\lambda \in [0,1]$. Thus, we can let $\lambda = 0$ and see that $2\langle x-p, p-y \rangle \geq 0$. \\ 
 
+\noindent{\bf 7.6} Claim: If f is a convex function, then the set $\{x \in {\rm I\!R}^{n} | f(x) \leq c \}$ is a convex set. \\ Suppose f is a convex function. Let $x_{a}$ and $x_{b}$ be arbitrary elements of $S= \{x \in {\rm I\!R}^{n} | f(x) \leq c\}$. It remains to show that $f(\lambda x_{a} + (1-\lambda)x_{b}) \leq c$. $f(\lambda x_{a} + (1-\lambda)x_{b}) \leq \lambda f(x_{a}) + (1-\lambda)f(x_{b}) \leq \lambda c + (1-\lambda)c = \lambda c - \lambda c + c = c$, as desired. \\
 
+\noindent{\bf 7.7} To show that f(x) is conex, we need to show that for all $x_{1}, x_{2} \in C$, $f(\mu x_{1} + (1-\mu)x_{2}) \leq \mu f(x_{1}) + (1-\mu) f(x_{2}).$ $f(\mu x_{1} + (1-\mu)x_{2}) = \sum_{i=1}^{k} \lambda_{i}f_{i}(\mu x_{1} + (1-\mu)x_{2}) \leq \sum_{i=1}^{k} \lambda_{i} [\mu f_{i}(x_{1}) + (1-\mu)f_{i}(x_{2})] = \mu \sum_{i=1}^{k} \lambda_{i}f_{i}(x_{i}) + (1-\mu)\sum_{i=1}^{k} \lambda_{i}f_{i}(x_{2}) = \mu f(x_{1}) + (1-\mu)f(x_{2})$. \\ 
+
+\noindent{\bf 7.13} Claim: If f is convex and bounded above, then f is constant. \\ Suppose f is convex and bounded above, and suppose to the contrary that there exists $x,y$ where $f(x) \geq f(y)$. Then for any $x_{1}, x_{2} \in C$ and $0 \leq \lambda \leq 1$, we have $f(\lambda x_{1} + (1-\lambda) x_{2}) \leq \lambda f(x_{1}) + (1-\lambda)f(x_{2})$. Thus, we know $f(x) \leq  \lambda f(\frac{x-(1-\lambda)y}{\lambda}) + (1- \lambda) f(y)$, where $x = \lambda x_{1} + (1 - \lambda)x_{2}$ and $y=x_{2}$. Rearranging the inequality, we obtain $\frac{f(x) - (1-\lambda)f(y)}{\lambda} \leq f(\frac{x-(1-\lambda)y}{\lambda} \leq b$, where b is a finite upper bound for f. As $\lambda \rightarrow 0^{+}$, $\frac{f(x)-(1-\lambda)f(y)}{\lambda} \rightarrow \infty$, which contradicts the assumption that f is bounded above. Therefore, it follows that f is constant, that is $f(x) = f(y)$ for all $x,y \in C$. \\
+
+\noindent{\bf 7.20} Claim: If f is convex and -f is also convex, then f is affine. \\ Suppose f is convex. Then, $f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1 - \lambda) f(y)$. Suppose -f is convex. Then $-f(\lambda x + (1-\lambda)y) \leq -\lambda f(x) + -(1 - \lambda) f(y)$. Multiplying the last inequality by -1 throughout and see that $f(\lambda x + (1-\lambda)y) \geq \lambda f(x) + (1 - \lambda) f(y)$. The only way that both inequalities can be true is if $f(\lambda x + (1-\lambda)y) = \lambda f(x) + (1 - \lambda) f(y)$. Therefore f is linear and thus affine. \\ 
+
+\noindent{\bf 7.21} Suppose $f(x{*}) \leq f(y) \forall y \in {\rm I\!R}^{n}$. Since $\phi$ is strictly increasing, we know that $f(x^{*})$ minimizes $\phi$ over the range of f, which means that $x^{*}$ minimizes $\phi \circ f$. Suppose $\phi \circ f(x^{*}) \leq \phi \circ f(y) \forall y \in {\rm I\!R}^{n}$. Then because $\phi$ is strictly increasing, $f(x^{*}) \leq f(y) \forall y \in C$, which means that $x^{*}$ minimizes f. 
+
+\vspace{25mm}
+
+\bibliography{Convex Analysis_probset}
 
 \end{document}
