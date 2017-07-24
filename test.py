@@ -17,7 +17,7 @@ dp = A.dot(x)
 print(dp)
 
 while True:
-#    pdb.set_trace()
+    pdb.set_trace()
     print(np.dot(A, x))
     break 
     xn = np.add(np.dot(A,x), b)

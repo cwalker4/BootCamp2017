@@ -1,0 +1,105 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{geometry}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\footnotesize\textsl{OSM Lab, Summer 2017, Math PS \#2}}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue,citecolor=red}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+
+\begin{document}
+
+\begin{flushleft}
+   \textbf{\large{Econ, Problem Set \#5, DSGE}} \\[5pt] Charlie Walker \\[5pt]
+\end{flushleft}
+
+\begin{enumerate}
+\item[1.1] 
+
+We guess for the policy function $K_{t+1} = Ae^{z_t}Kt^{\alpha}$ and plug into toe euler equation (60) :
+\begin{align*}
+\frac{1}{e^{z_t}K_t^{\alpha} - K_{t+1}} =&\,  \beta E_t \left\lbrace \frac{\alpha e^{z_{t+1}}K_{t+1}^{\alpha -1}}{e^{z_{t+1}}K_{t+1}^{\alpha} - K_{t+2}} 
+\right\rbrace\\
+\frac{1}{e^{z_t}K_t^{\alpha} - Ae^{z_t}K^{\alpha}} =&\,  \beta E_t \left\lbrace \frac{\alpha e^{z_{t+1}}K_{t+1}^{\alpha -1}}{e^{z_{t+1}}K_{t+1}^{\alpha} - Ae^{z_{t+1}}K_{t+1}^{\alpha}} \right\rbrace\\
+\frac{1}{e^{z_t}K_t^{\alpha} - Ae^{z_t}K^{\alpha}} =&\,  \beta E_t \left\lbrace \frac{\alpha K_{t+1}^{\alpha -1}}{K_{t+1}^{\alpha} - AK_{t+1}^{\alpha}} \right\rbrace\\
+\frac{1}{(1 - A)e^{z_t}K_t^{\alpha}} =&\,  \beta  \frac{\alpha K_{t+1}^{\alpha -1}}{(1 - A)K_{t+1}^{\alpha}}\\
+\frac{1}{e^{z_t}K_t^{\alpha}} =&\,  \beta  \frac{\alpha K_{t+1}^{\alpha -1}}{K_{t+1}^{\alpha}}\\
+\frac{1}{e^{z_t}K_t^{\alpha}} =&\,  \beta  \frac{\alpha}{K_{t+1}} 
+\qquad \text{plugging in the guess once more gives}\\
+\frac{1}{e^{z_t}K_t^{\alpha}} =&\,  \beta  \frac{\alpha}{Ae^{z_t}K_t^{\alpha}} \\
+A=&\, \beta \alpha
+\end{align*}
+\item[1.2]
+For the specific functions the equilibrium equations are the following:
+\begin{align*}
+\frac{1}{c_t} = &\, \beta E_t \left\lbrace \frac{1}{c_{t+1}}[(r_{t+1} - \delta)(1-\tau)+1] \right\rbrace \\
+a \frac{1}{1-l_t} = &\, \frac{w_t(1-\tau)}{c_t}\\
+r_t=&\,\alpha e^{z_t} \left( \frac{K_t}{L_t} \right)^{\alpha-1}\\
+w_t = &\, (1-\alpha) e^{z_t} \left( \frac{K_t}{L_t} \right)^{\alpha}
+\end{align*}
+\item[1.4]
+Characterizing equations are as follows:
+\begin{align*}
+c_t =&\, (1 - \tau) [w_t l_t + (r_t - \delta) k_t] + k_t + T_t - k_{t+1} \\
+c_t^{- \gamma} =&\, \beta E_t[ c_t^{- \gamma} (( r_{t+1} - \delta )(1 - \tau) + 1)]\\
+a(1 - l_t)^{- \xi} = &\,c_t^{- \gamma} w_t (1 - \tau)\\
+r_t = &\,e^{z_t} \alpha [\alpha K_t^{\eta} + (1 - \alpha) L_t^{\eta}]^{\frac{1}{\eta}-1} K_t^{\eta - 1}\\
+w_t = &\,e^{z_t} (1 - \alpha) [\alpha K_t^{\eta} + (1 - \alpha) L_t^{\eta}]^{\frac{1}{\eta}-1} L_t^{\eta - 1}\\
+T_t  = &\,\tau [w_tl_t + (r_t - \delta) k_t]\\
+z_t = &\,(1 - \rho)\overline{z} + \rho z_{t-1} + \epsilon_t^2 
+\end{align*}
+\item[1.5]
+Solving for the steady States $\bar{r}$ and $\bar{K}$ and plugging in the parameter values from the exercise gives
+\begin{align*}
+\bar{r} =&\, \frac{1-\beta}{\beta(1-\tau)}+\delta = 0.124\\
+\bar{k} = &\, \left( \bar{r}^{\frac{1}{\alpha - 1}} \right)\frac{1}{\alpha}=7.287
+\end{align*}
+
+
+\end{enumerate}
+
+\end{document}
