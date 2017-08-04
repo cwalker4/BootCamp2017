@@ -106,7 +106,7 @@ Below is a summary schedule of topics. More detailed schedules are on the respec
 7-18  | T   |                     |                            | Large data       |     |
 7-19  | W   | Convex analysis     | DSGE modeling              |                  |     |
 7-20  | Th  |                     |                            | High dimensional approx. |     |
-7-21  | F   | Linear optimization | DSGE linear approximation  |                  | TBA |
+7-21  | F   | Linear optimization | DSGE linear approximation  |                  | [Simon Scheidegger](https://sites.google.com/site/simonscheidegger/) "HPC in Economics" |
 
 ### Week 6
 
@@ -126,7 +126,7 @@ Below is a summary schedule of topics. More detailed schedules are on the respec
 8-1  | T   |                        |                          | HPC/parallel compute |     |
 8-2  | W   | Nonlinear optimization | Macro-financial modeling |                      |     |
 8-3  | Th  |                        |                          | HPC/parallel compute |     |
-8-4  | F   | Conclusion: Hwk due    | Conclusion: Hwk due      | Conclusion: Hwk due  | TBA |
+8-4  | F   | [Conclusion:](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/Conclusion_BootCamp.pdf) Hwk due    | [Conclusion:](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/Conclusion_BootCamp.pdf) Hwk due      | [Conclusion:](https://github.com/OpenSourceMacro/BootCamp2017/blob/master/Conclusion_BootCamp.pdf) Hwk due  | TBA |
 
 This will be an intensive seven weeks. We expect that your attendance of lectures plus homework time will average 60 hours per week of work.
 
